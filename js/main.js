@@ -14,19 +14,11 @@ function(){
 
 
 // Get the menu
-document.getElementById('search').addEventListener('click',
-function(){
-  if(document.querySelector('.input').style.display = 'none'){
-     document.querySelector('.input').style.display = 'inline-block';
-  }
 
 
-
-});
-
-window.addEventListener('scroll',function(){
-  document.querySelector('.input').style.display = 'none';
-});
+// window.addEventListener('scroll',function(){
+//   document.querySelector('.input').style.display = 'none';
+// });
 
 
 
@@ -98,7 +90,7 @@ function toggleMenu(){
     console.log(pageYOffset + 'px');
      if(pageYOffset > 98)
       {
-        document.querySelector(".menu-container").style.top = '-90px';
+        document.querySelector(".menu-container").style.top = '-80px';
         document.querySelector(".menu-container").style.boxShadow ='0px 5px 4px 0 rgba(0, 0, 0, 0.2)';
         document.querySelector(".menu-container").style.background = '#eee';
         menubtn.style.top = '2px';
